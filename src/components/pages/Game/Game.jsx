@@ -19,14 +19,15 @@ function Game() {
   useEffect (()=>{
     alert("houer changed")
   }, [playTime])
-  
+
 
   return (
     <div className="game">
-      <h1>{Level}</h1>
+      <h1>About</h1>
+      <h1>{Level}</h1> 
       {/* <h1>{playTime}</h1> */}
       <button onClick={()=>{setLevel(Level+1)}}>+</button>
-      <button onClick={()=>{setplayTime(console.log(playTime=new Date()))}}>Time</button>
+      <button onClick={()=>{setplayTime(console.log(playTime=new Date()))}}>Time</button> 
 
     </div>
     
