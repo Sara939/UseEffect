@@ -4,6 +4,7 @@ import About from './components/pages/About/About';
 import Game from './components/pages/Game/Game';
 import Home from './components/pages/Home/Home';
 import Router from './components/pages/Router/Router';
+import Desk from './components/pages/Desk/Desk';
 
 let pagesArray= [1,2,3];
 
@@ -51,16 +52,15 @@ function App({}) {
         <button onClick={()=>{setPageNumber(item)}}>{item}</button>
       })
      } */}
+     <Desk num={20}/>
 
-     <Router pageNumber={pageNumber}/>
-     {
+     {/* <Router pageNumber={pageNumber}/> */}
+     {/* {
       
       pagesArray.map((i)=>{return <button onClick={()=>{setPageNumber(i)}}>{i}</button>})
       
-     }
+     } */}
      
-     
-     <h1>fsdfdsd</h1>
     
      
 
