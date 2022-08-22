@@ -35,7 +35,7 @@ function Desk({num}) {
       <button onClick={()=>{setTableColor("blue")}}>blue</button>
 
       <input type="text" onChange={ColorFromUser}/>
-      {/* <button >Swich Color</button> */}
+      {/* <button>Swich Color</button> */}
 
 
 
