@@ -15,8 +15,14 @@ function Desk({num}) {
   }, [])
   function ColorFromUser(e){
     setTableColor(e.target.value);
-    console.log(e.target.value);
   }
+  useEffect(()=>{
+    ;
+  },[tableColor])
+
+
+
+
 
   return (
     <div className="desk">
@@ -28,8 +34,8 @@ function Desk({num}) {
       <button onClick={()=>{setLegsNum(0)}}>0</button>
       <button onClick={()=>{setTableColor("blue")}}>blue</button>
 
-      <input type="text"/>
-      <button onClick={()=>{ColorFromUser()}}>Swich Color</button>
+      <input type="text" onChange={ColorFromUser}/>
+      {/* <button >Swich Color</button> */}
 
 
 
